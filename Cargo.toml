@@ -1,0 +1,14 @@
+[package]
+name = "uuidgen"
+version = "0.1.0"
+edition = "2024"
+
+[profile.release]
+debug = false
+opt-level = 3
+
+[dependencies]
+uuid = { version = "1.11.0", default-features = false, features = [
+  "std",
+  "v7",
+] }
