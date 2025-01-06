@@ -8,11 +8,11 @@
     let pkgs = import nixpkgs { inherit system; }; in {
 
       packages.default = pkgs.rustPlatform.buildRustPackage {
-        pname = "uuidgen";
+        pname = "uuidgen7";
         version = "1.0.0";
         nativeBuildInputs = with pkgs; [ cargo rustc ];
         src = ./.;
-        cargoHash = "sha256-wWpQ1oDRkq1E316Msfs1xK47bqYSv2cOUNMi1Rqjt/E=";
+        cargoHash = "sha256-7EDYbltxdlci5VVJv0+eiSSjZv2iSybksa0Sjz+45VA=";
       };
     });
 }
